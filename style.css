@@ -250,7 +250,7 @@ path {
   margin-bottom: 5%;
   font-weight: 100;
   font-size: 2.5vw;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 
@@ -404,9 +404,15 @@ scrollbar-width: 0px; */
 
 
 .Icon{
-  width: 30%;
-  height: 30%;
-  margin-left: 22%;
+    width: 20%;
+    height: 20%;
+    /* position: absolute;
+    left: 5%;
+    top: 18%; */
+
+  /* width: 30%;
+  height: 30%;*/
+  margin-left: 37.5%; 
 
 }
 .Name{
@@ -473,11 +479,13 @@ scrollbar-width: 0px; */
   display: inline;
 }
 .C5{
+  position: absolute;
+  top: 25%;
   width: 40%;
   height: 40%;
 }
 #TeacherName{
-  color: #F6FF00;
+  color: #ffaa00;
 }
 .border{
   position: absolute;
@@ -487,3 +495,19 @@ scrollbar-width: 0px; */
   left:-5%;
   
 }
+.H55  {
+  width: 50%;
+  /* margin-left: 49%;
+  margin-top: 15%; */
+  position: absolute;
+  top: 29%;
+  right: 5%;
+  font-size: 1.5vw;
+}
+
+
+/* @media (max-width:1800px) {
+  .H55{
+    margin-top: 20%;
+  }
+} */
