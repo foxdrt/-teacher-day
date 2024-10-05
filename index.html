@@ -9,7 +9,7 @@
   <body>
     <div id="Bar" class="Bar">
       
-      <button id="OurThanks">امتنان عن شكرنا</button>
+      <button id="OurThanks">شكر و امتنان</button>
       <img id="TeacherDayIcon" src="images/الشعار-01.png">
     </div> <!--  bar -->
     <div class="loadingScreen" id="loadingScreen">
@@ -17,13 +17,28 @@
         <img src="https://static-00.iconduck.com/assets.00/connection-loading-icon-512x512-59cpvtl7.png" class="loadingIcon">
       </div>
     </div>
-
+    <div id="Degree" class="hide .EE">
+      <div class="content-wrapper">
+        <div class="text-content">
+          <h1>
+            شكرا استاذي الفاضل <span id="TeacherName"></span>  على جهودك  المبذوله و المتواصله في تعليم الاجيال انتم فخر هذه الامه وعزها ولولا الله ثم انتم  لما ارتقت هذه الامه وعظم شأنها: فلقد كان  حبيبكم رسول الله -ﷺ- هو المعلم الأول ولكم فيه اسوة حسنة
+          </h1>
+        </div>
+        <div class="image-content">
+          <img src="images/الشعار-01.png" class="C5" alt="Teacher Day Logo">
+        </div>
+      </div>
+      <img src="images/border.png" class="border" alt="Border Decoration">
+    </div>
     <div class="shadow hide " onclick="closeWindow()"></div>
-    <div id="Window" class="Window hide ">
+    <div id="Window" class="Window ">
       <button class="closeBtn" onclick="closeWindow()">X</button>
       <!-- <h1 class="Main" id="Topic">Topic</h1>
       <p class="windowDescription" id="descr" sty>descr</p> -->
       <iframe  class="pdf" src="pdf/تعليم قديما1.pdf#toolbar=0" onerror="console.warn('there something wrong happend')"></iframe>
+      <h1 class="EE hide Name">الاسم الكريم</h1>
+      <input class="EE hide" id="input" placeholder="الاسم هنا">
+      <button class="EE hide" id="Button">حسنا</button>
 
       <div class="CardContainer" style="justify-content:center;">
         <!-- <div class="windowCard " id="foods">
@@ -36,21 +51,21 @@
           <img class="Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/800px-A_black_image.jpg?20201103073518">
         </div> -->
       </div>
-      <di class="Xxxx hide">
+      <!-- <di class="Xxxx hide">
         <button class="HIDEXXX closeBtn" onclick="cl()"><</button>
-      </div>
+      </div> -->
     </div>
 
     <section class="hidden" id="section1">
-      <h1 class="Topic">يوم المعلم: تقدير الجهود وعطاء لا ينتهي</h1>
-      <p class="description">يوم التأسيس السعودي هو ذكرى تأسي وصف.</p>
+      <h1 class="Topic">يوم المعلم تقدير الجهود والعطاءالذي لا  ينتهي</h1>
+      <p class="description">للمعلم تاثير كبير على المجتمع وهذا ما  سوف نتعلمه خلال الموقع</p>
       <div class="CardContainer">
         <div class="Card hidden" id="Neon">
           <h1 class="cardText">تاريح التعليم</h1>
           <img class="Logo" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Saudi_arabian_mathematics_class.jpg" />
         </div>
         <div class="Card hidden" id="Cube">
-          <h1 class="cardText">المربع الجديد</h1>
+          <h1 class="cardText">فضل العلم</h1>
           <img class="Logo" style="object-fit: cover;" />
         </div>
         <div class="Card hidden" id="MIS">
@@ -62,14 +77,16 @@
     </section>
     
     <section class="hidden">
-      <h1 class="Topic">عنوان</h1>
-      <p class="description">يش وصف ..</p>
+      <h1 class="Topic">لمعلم، صانع الأجيال وملهم المستقبل</h1>
+      <p class="description">يعتبر المعلم حجر الزاوية في بناء المجتمعات وتطورها، فهو القائد الذي يوجه العقول الشابة نحو المعرفة والنجاح. لا يقتصر دور المعلم على تقديم المعلومات فحسب، بل يتعدى ذلك إلى بناء شخصيات الطلاب وزرع القيم النبيلة فيهم. من خلال خبرته وعطاءه اللامحدود، يساعد المعلم في تشكيل المستقبل من خلال بناء أجيال واعية قادرة على مواجهة التحديات.
+
+        المعلم ليس مجرد ناقل للمعرفة، بل هو موجه يلهم الطلاب لاستكشاف قدراتهم والإبداع في مجالاتهم. بفضل إيمانه برسالته السامية، يصنع من فصوله التعليمية منابر للأمل والطموح، حيث يغرس في قلوب طلابه حب التعلم المستمر والتميز. لذا، يجب أن نحتفي بالمعلم اليوم وكل يوم، تقديرًا لجهوده التي لا تقدر بثمن.</p>
     </section>
     
     <section class="hidden">
-      <h1 class="Topic">عنوان</h1>
+      <h1 class="Topic"> المعلم قدوة ومُلهم</h1>
       <h2 class="description">
-        الازرار هاذي هي 
+        المعلم هو الشخصية التي تلهم الطلاب ليس فقط في مجال العلم والمعرفة، بل في مختلف جوانب الحياة. من خلال شخصيته القيادية وأخلاقياته المهنية، يعتبر المعلم نموذجاً يُحتذى به. إنه يعلم طلابه كيف يكونون متعلمين مدى الحياة، وكيف يتعاملون مع التحديات بالصبر والعزيمة. لا يقتصر دوره على تقديم المعلومات فحسب، بل يسعى إلى تحفيز الطلاب على التفكير النقدي والإبداعي. في يوم المعلم، نحتفل بتلك الجهود الجبارة التي يبذلها المعلمون في تعليم الأجيال وتوجيههم ليصبحوا قادة المستقبل.
       </h2>
       <!-- <div class="CardContainer">
         <div class="Card hidden" id="Neon">
@@ -88,13 +105,14 @@
     </section>
 
     <section class="hidden">
-      <h1 class="Topic" style="color: white;text-align: center;">شكرا لك على المشاهده</h1>
-      <a href="https://twitter.com/FOXDRT" target="_blank" style="text-decoration:none">
-        <p class="description" style="color: white;text-align: center;" >@foxdrt|تركي </p>
-      </a>
-      <a href="https://twitter.com/EEEE" target="_blank" style="text-decoration:none">
-        <p class="description" style="color: white;text-align: center;" >صالح</p>
-      </a>
+      <h1 class="Topic" style="color: white;text-align: center;">شكرا لكم على زيارتنا</h1>
+     
+        <p class="description" style="color: white;text-align: center;" >  تركي  خالد السعيد -</p>
+
+      
+        <p class="description" style="color: white;text-align: center;" >صالح عمر المنصور -</p>
+        <img class="Icon" src="images/قيس بن عاصم.png" >
+
     </section>
 
     <script src="COWWW.js"></script>
