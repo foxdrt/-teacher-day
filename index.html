@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>يوم المعلم</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -20,7 +21,7 @@
     <div id="Degree" class="hide .EE">
       <div class="content-wrapper">
         <div class="text-content">
-          <h1>
+          <h1 class="H55">
             شكرا استاذي الفاضل <span id="TeacherName"></span>  على جهودك  المبذوله و المتواصله في تعليم الاجيال انتم فخر هذه الامه وعزها ولولا الله ثم انتم  لما ارتقت هذه الامه وعظم شأنها: فلقد كان  حبيبكم رسول الله -ﷺ- هو المعلم الأول ولكم فيه اسوة حسنة
           </h1>
         </div>
@@ -31,11 +32,11 @@
       <img src="images/border.png" class="border" alt="Border Decoration">
     </div>
     <div class="shadow hide " onclick="closeWindow()"></div>
-    <div id="Window" class="Window hide ">
+    <div id="Window" class="Window hide">
       <button class="closeBtn" onclick="closeWindow()">X</button>
       <!-- <h1 class="Main" id="Topic">Topic</h1>
       <p class="windowDescription" id="descr" sty>descr</p> -->
-      <iframe  class="pdf" src="pdf/تعليم قديما1.pdf#toolbar=0" onerror="console.warn('there something wrong happend')"></iframe>
+      <iframe  class="pdf" id="pdf" src="" onerror="console.warn('there something wrong happend')"></iframe>
       <h1 class="EE hide Name">الاسم الكريم</h1>
       <input class="EE hide" id="input" placeholder="الاسم هنا">
       <button class="EE hide" id="Button">حسنا</button>
@@ -57,23 +58,10 @@
     </div>
 
     <section class="hidden" id="section1">
-      <h1 class="Topic">يوم المعلم تقدير الجهود والعطاءالذي لا  ينتهي</h1>
-      <p class="description">للمعلم تاثير كبير على المجتمع وهذا ما  سوف نتعلمه خلال الموقع</p>
-      <div class="CardContainer">
-        <div class="Card hidden" id="Neon">
-          <h1 class="cardText">تاريح التعليم</h1>
-          <img class="Logo" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Saudi_arabian_mathematics_class.jpg" />
-        </div>
-        <div class="Card hidden" id="Cube">
-          <h1 class="cardText">فضل العلم</h1>
-          <img class="Logo" style="object-fit: cover;" src="images/مكتبه.jpg" />
-        </div>
-        <div class="Card hidden" id="MIS">
-          <h1 class="cardText">صنع في السعودية</h1>
-          <img class="Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/800px-A_black_image.jpg?20201103073518" style="object-fit: cover;" />
-        </div>
-      </div>
-      
+      <h1 class="Topic"> المعلم قدوة ومُلهم</h1>
+      <h2 class="description">
+        المعلم هو الشخصية التي تلهم الطلاب ليس فقط في مجال العلم والمعرفة، بل في مختلف جوانب الحياة. من خلال شخصيته القيادية وأخلاقياته المهنية، يعتبر المعلم نموذجاً يُحتذى به. إنه يعلم طلابه كيف يكونون متعلمين مدى الحياة، وكيف يتعاملون مع التحديات بالصبر والعزيمة. لا يقتصر دوره على تقديم المعلومات فحسب، بل يسعى إلى تحفيز الطلاب على التفكير النقدي والإبداعي. في يوم المعلم، نحتفل بتلك الجهود الجبارة التي يبذلها المعلمون في تعليم الأجيال وتوجيههم ليصبحوا قادة المستقبل.
+      </h2>
     </section>
     
     <section class="hidden">
@@ -84,10 +72,7 @@
     </section>
     
     <section class="hidden">
-      <h1 class="Topic"> المعلم قدوة ومُلهم</h1>
-      <h2 class="description">
-        المعلم هو الشخصية التي تلهم الطلاب ليس فقط في مجال العلم والمعرفة، بل في مختلف جوانب الحياة. من خلال شخصيته القيادية وأخلاقياته المهنية، يعتبر المعلم نموذجاً يُحتذى به. إنه يعلم طلابه كيف يكونون متعلمين مدى الحياة، وكيف يتعاملون مع التحديات بالصبر والعزيمة. لا يقتصر دوره على تقديم المعلومات فحسب، بل يسعى إلى تحفيز الطلاب على التفكير النقدي والإبداعي. في يوم المعلم، نحتفل بتلك الجهود الجبارة التي يبذلها المعلمون في تعليم الأجيال وتوجيههم ليصبحوا قادة المستقبل.
-      </h2>
+
       <!-- <div class="CardContainer">
         <div class="Card hidden" id="Neon">
           <h1 class="cardText">تاريح التعليم</h1>
@@ -102,6 +87,23 @@
           <img class="Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/800px-A_black_image.jpg?20201103073518" style="object-fit: cover;" />
         </div>
       </div> -->
+      <h1 class="Topic">يوم المعلم تقدير الجهود والعطاءالذي لا  ينتهي</h1>
+      <p class="description">للمعلم تاثير كبير على المجتمع وهذا ما  سوف نتعلمه خلال الموقع</p>
+      <div class="CardContainer">
+        <div class="Card hidden" id="Neon">
+          <h1 class="cardText">تاريح التعليم</h1>
+          <img class="Logo" src="images/تاريخ التعليم.png" />
+        </div>
+        <div class="Card hidden" id="Cube">
+          <h1 class="cardText">فضل العلم</h1>
+          <img class="Logo" style="object-fit: cover;" src="images/فضل العلم.png" />
+        </div>
+        <div class="Card hidden" id="MIS">
+          <h1 class="cardText"> المعلم في  المجتمع</h1>
+          <img class="Logo" src="images/دور المعلم.png" style="object-fit: cover;" />
+        </div>
+      </div>
+      
     </section>
 
     <section class="hidden">
@@ -111,7 +113,7 @@
 
       
         <p class="description" style="color: white;text-align: center;" >صالح عمر المنصور -</p>
-        <img class="Icon" src="images/قيس بن عاصم.png" >
+        <img class="Icon" src="images/قيس بن عاصم.png"  >
 
     </section>
 
