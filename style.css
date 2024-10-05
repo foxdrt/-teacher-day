@@ -9,14 +9,16 @@ body {
   font-family: Harir, "Lalezar", system-ui;
   padding: 0;
   margin: 0;
+  
 }
 section {
   /* align-content: center; */
   padding: 5%;
   min-height: 100vh;
 }
-section:nth-child(8) {
+section:nth-child(9) {
   background-color: black;
+  min-height: 80vh;
  } /*ملاحظه ترا كل ما تظيف div راح يتغير  */
 /* ذا يعني ان اخر قسم بيكون اسود هو الي بيكون في اسمي و اسمك و كلام كذا */
 .shadow {
@@ -40,7 +42,7 @@ section:nth-child(8) {
   position: fixed;
   width: 100%; /* هذا العرض خله نفس ما هو */
   height: 13%; /*  المشكله بالطول*/
-  background-color: rgb(132, 119, 85);
+  background-color: rgb(255 188 127);
   top: 0;
   left: 0;
   z-index: 3;
@@ -64,11 +66,18 @@ section:nth-child(8) {
   padding: 0.5%;
   right: 0;
   font-size: 2.5vw;
-
+  background-color: transparent;
+  border: 0.5vw dotted black;
+  transition: border ease 0.3s ,background-color ease 0.3s,color ease 0.3s;
   /* margin-right: ; */
 }
+#OurThanks:hover {
+  border-style: solid;
+  background-color: #000000;
+  color: white;
+}
+@media (max-width:1300px) {
 
-@media (max-width: 1300px) {
   .Bar {
     height: 7%;
     
@@ -104,6 +113,8 @@ section:nth-child(8) {
   opacity: 1;
   filter: blur(0px);
   transform: translateX(0);
+  transition: all 1s linear;
+
 }
 
 @media (prefers-reduced-motion) {
@@ -179,12 +190,6 @@ path {
   transform: translateX(-100%);
 }
 
-di.Xxxx.hide {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(-100%) translate(-50%, -50%);
-  transition: transform 1s Fast-Out, visibility 1s ease, opacity 1s ease;
-}
 .showw {
   opacity: 1;
   visibility: visible;
@@ -269,6 +274,18 @@ di.Xxxx.hide {
   transform: translate(-50%, -50%);
   background-color: aliceblue;
   z-index: 3;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+#Degree{
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  z-index:6;
   box-sizing: border-box;
   justify-content: space-between;
 }
@@ -384,3 +401,89 @@ position: absolute;
 right: 5%;
 top: 5%;
 scrollbar-width: 0px; */
+
+
+.Icon{
+  width: 30%;
+  height: 30%;
+  margin-left: 22%;
+
+}
+.Name{
+  margin-top: 33%;
+  margin-left: 40%;
+  margin-bottom: 3.5%;
+  font-size: 2.5vw;
+}
+
+#input{
+  display: block;
+  border: 0.15vw solid black;
+  width: 30%;
+  height: 6%;
+  font-family: Harir;
+  color: #9B9B9B;
+  text-align: center;
+  font-size: 1.7vw;
+  margin-bottom: 4.5%;
+  margin-left: 35.5%;
+  transition: all ease 0.5s
+  
+}
+#input.NeedToFull {
+  border: 0.15vw solid #FF0000;
+}
+#input:focus{
+  outline: none;
+  color: #000000;
+  border-color: rgb(30, 152, 186);
+}
+#Button{
+  font-family: Harir;
+
+  width: 30%;
+  margin-left: 36%;
+  height: 8%;
+  background-color: #00FF1E ;
+  border-radius: 5%;
+  color: black;
+  font-size: 2vw;
+  border: none;
+  transition: all ease 0.5s
+
+}
+#Button:hover{
+  scale: 102%;
+}
+#Button:active{
+  scale: 105%;
+}
+
+.CD{
+  text-align: right;
+  font-size: 2.5vw;
+  margin-right:5%;
+  
+}
+.CD1{
+  margin-top: 15%;
+}
+.CD2{
+  width: 33%;
+  display: inline;
+}
+.C5{
+  width: 40%;
+  height: 40%;
+}
+#TeacherName{
+  color: #F6FF00;
+}
+.border{
+  position: absolute;
+  width: 110%;
+  height: 102%;
+  top: -0.8%;
+  left:-5%;
+  
+}
