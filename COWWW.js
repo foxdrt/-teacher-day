@@ -18,7 +18,7 @@ const descr = document.getElementById("descr");
 const windowEl = document.getElementById("Window");
 const section1 = document.getElementById("section1");
 const windowCards = document.querySelectorAll(".windowCard");
-const pdf = document.querySelector(".pdf");
+const pdf = document.getElementById("pdf");
 const button = document.getElementById("Button")
 const input = document.getElementById("input")
 const degree = document.getElementById("Degree")
@@ -64,7 +64,12 @@ const showImg = (img) => {
 const updateContent = (Topic, Description,pdf) => {
   // TopicEl.textContent = Topic;
   // descr.textContent = Description;
-  pdf.src = `${pdf}#toolbar=0` // .pdf#toolbar=0
+  console.log(pdf,pdf.src)
+
+  // pdf.src =  // .pdf#toolbar=0
+  document.getElementById("pdf").src = `${pdf}#toolbar=0`
+  console.log(pdf,pdf.src)
+
 };
 window.onload = () => {
   document.getElementById("loadingScreen").style.display = "none";
@@ -83,13 +88,13 @@ const contentForBtns = [
   
   // تم دعم المشروع من قبل صندوق الاستثمارات العامة السعودي بقيمة 500 مليار دولار، والمستثمرين المحليين والعالميين². وتتولى شركة نيوم التي تأسست في يناير 2019 عمليات تطوير منطقة نيوم والإشراف عليها².
   // `,
-  pdf: "Saudi-Arabia-Founding-Day-main\pdf\تعليم قديما1.pdf"
+  pdf: "pdf/تعليم قديما1.pdf"
   },
   {
     Name: "Cube",
     // Topic: "المربع الجديد",
     // Description: `مشروع المربع الجديد في الرياض هو تحول حضري ضخم يمتد على مساحة 19 كيلومتر مربع، يهدف إلى إعادة تعريف ملامح المدينة وتحسين جودة العيش والعمل والترفيه. يتضمن المشروع وحدات سكنية وفنادق ومساحات تجارية ومكتبية، بالإضافة إلى مرافق ترفيهية ومجتمعية. يشمل المشروع برج المكعب كمعلم بارز يتميز بتصميم مستوحى من الطراز المعماري النجدي، ويعد أحد أهم مشاريع استراتيجية صندوق الاستثمارات العامة لإعادة تعريف التنمية الحضرية في المملكة وتحقيق رؤية السعودية ٢٠٣٠.`,
-    pdf: "Saudi-Arabia-Founding-Day-main\pdf\تعليم قديما1.pdf"
+    pdf: "pdf/فضل العلم.pdf"
 
   },
   {
@@ -103,7 +108,7 @@ const contentForBtns = [
     // يمكّن البرنامج الشركات المتعاونة معه، من استخدام شعار "صنع في السعودية" وإبراز صورة إيجابية للمملكة في جميع أنحاء العالم.
     
     // اكتشف كيف تعمل رؤية السعودية ٢٠٣٠ لتحقيق وبناء اقتصاد سعودي متنوع ومستدام.`,
-    pdf: "Saudi-Arabia-Founding-Day-main\pdf\تعليم قديما1.pdf"
+    pdf: "pdf/دور المعلم.pdf"
 
   },
 ];
@@ -115,6 +120,7 @@ for (let i = 0; i < CardsBtn.length; i++) {
     .getElementById(contentForBtns[i].Name)
     .addEventListener("click", () => {
       openWindow();
+      console.log(contentForBtns[i].Name,contentForBtns[i].pdf)
       updateContent(contentForBtns[i].Topic, contentForBtns[i].Description,contentForBtns[i].pdf);
     });
 }
@@ -154,6 +160,7 @@ const EASters = {
   "صالح سوا شي اخيرا" : 'https://youtu.be/B5hUgTZQOMs?si=t2HCP0Ds1zaF0fZN', // take it ez bro
   "ابو طله": "https://youtu.be/iB5rEwU9E04?si=vsyxFXAMmJLiB1C7",
   "bobux": "https://youtu.be/dQw4w9WgXcQ?si=xGF9hFgN2CftkgMs",
+  "crazy":  "https://youtu.be/Yh1ZDa-rinM?si=mvoqaOrZ5nmKXrXr"
 }
 
 button.addEventListener("click",(Event)=>{
